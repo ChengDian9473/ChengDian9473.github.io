@@ -24,11 +24,12 @@
 </head>
 <body>
 
-<h1>Dian Cheng</h1>
+<h1>Dian Cheng 鄭琠</h1>
 <p class="sub">
   CS undergraduate, National Taiwan University<br>
   <a href="mailto:adamcheng.gl@gmail.com">adamcheng.gl@gmail.com</a> ·
   <a href="https://github.com/ChengDian9473">GitHub</a>
+  <a href="assets/pdf/cv.pdf">CV</a>
 </p>
 
 <p>
@@ -43,7 +44,7 @@
   <div class="meta">Po-Yi Wu*, Djengo Cyun-Jyun Fang*, <strong>Dian Cheng</strong>, Tsung-Wei Ke · Preprint, under review, 2026</div>
 </div>
 
-<h2>Projects</h2>
+<h2>Games</h2>
 
 <div class="item">
   <div class="item-title">SoundTrack — Rhythm Dungeon Escape Game</div>
@@ -55,21 +56,39 @@
   <p>Designed the project architecture and core data structures, implemented the
   main game loop and scene flow, and built a prefab-based level/enemy editor.</p>
 </div>
+<div class="item">
+  <div class="item-title">Math Hunter</div>
+  <div class="meta">Unity, C# ·
+    <a href="https://chengdian9473.itch.io/math-hunter">Play</a> ·
+  </div>
+  <p>A redesign of Unity's sample match-3 project  into a match-3/incremental hybrid. The original game simply ends when the task is completed; I added a talent tree, so players can strengthen themselves between runs, unlocking more modifiers, tgat raise thier scoring ceiling in the next session.</p>
+</div>
+
+<h2>Projects</h2>
+
+<div class="item">
+  <div class="item-title">MLB Game Prediction</div>
+  <div class="meta">Python, NumPy</div>
+  <p>Built a model to predict MLB game outcomes for an in-class Kaggle competition, placing 26th of 141 teams (0.590 accuracy vs 0.577 baseline); led data preprocessing and designed ratio-based features to capture relative team strength.</p>
+</div>
 
 <div class="item">
   <div class="item-title">6 Nimmt! Game Agent</div>
   <div class="meta">Python, PyTorch</div>
-  <p>Built and compared two agents for a hidden-information card game: an RL agent
-  following the Suphx pipeline (BC → PPO teacher → KL-regularized student, 74th of
-  284 teams) and an MCTS search agent (115th).</p>
+  <p>Built and compared two agents for a hidden-information card game: an RL agent following the Suphx pipeline (BC $\to$ PPO teacher $\to$ KL-regularized student), ranked 74th of 284 teams, while an MCTS agent ranked 115th.</p>
 </div>
 
 <div class="item">
-  <div class="item-title">MLB Game Prediction</div>
-  <div class="meta">Python</div>
-  <p>Predicted MLB game outcomes for an in-class Kaggle competition, placing 26th
-  of 141 teams. Led data preprocessing and designed ratio-based features.</p>
+  <div class="item-title">Extending the Election Hotelling Model</div>
+  <div class="meta">Game Theory and Information, final report · In Chinese · 
+    <a href="assets/pdf/hotelling-elections.pdf">PDF</a></div>
+  <p>Added party reputation and policy tolerance as parameters to the classical Hotelling model, then analyzed whether pure-strategy Nash equilibrium exists under different candidate utility functions and cost structures. Most configurations have none - which may be why we see such diverse platforms in real-world elections.</p>
 </div>
 
+<div class="item">
+  <div class="item-title">Mario Kart Ban-Pick Tool</div>
+  <div class="meta">Python, pygame</div>
+  <p>I help organize a Mario Kart tournament that previously used a Unity-based ban-pick system. I rebuilt a lightweight version in Python with clearer visualization and configurable track pools.</p>
+</div>
 </body>
 </html>
