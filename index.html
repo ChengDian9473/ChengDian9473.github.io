@@ -69,13 +69,13 @@
 <div class="item">
   <div class="item-title">MLB Game Prediction</div>
   <div class="meta">Python, NumPy</div>
-  <p>Built a model to predict MLB game outcomes for an in-class Kaggle competition, placing 26th of 141 teams (0.590 accuracy vs 0.577 baseline); led data preprocessing and designed ratio-based features to capture relative team strength.</p>
+  <p>Predicted MLB game outcomes for an in-class Kaggle competition, placing 26th of 141 teams (0.590 accuracy vs 0.577 baseline). I led data preprocessing and found that raw differences between team statistics carried less signal than their ratios, so I built the feature set around relative quantities. We also found that each competition stage needed a different validation split, since the test sets were drawn from different distributions.</p>
 </div>
 
 <div class="item">
   <div class="item-title">6 Nimmt! Game Agent</div>
   <div class="meta">Python, PyTorch</div>
-  <p>Built and compared two agents for a hidden-information card game: an RL agent following the Suphx pipeline (BC $\to$ PPO teacher $\to$ KL-regularized student), ranked 74th of 284 teams, while an MCTS agent ranked 115th.</p>
+  <p>Built and compared two agents for a hidden-information card game. The first is a deep learning agent: hand and global state are encoded into features, then trained with the Suphx pipeline - behavior cloning from course baselines, PPO fine-tuning to form a teacher, then KL-regularized PPO to train a student (74th of 284 teams). The second is an MCTS search agent, which ranked 115th. Due to a one-second move limit, hidden hands, and simultaneous play, there was not enough simulation budget. The lack of an expert policy also made the search hard to prune.</p>
 </div>
 
 <div class="item">
